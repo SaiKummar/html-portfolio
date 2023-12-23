@@ -1,2 +1,2 @@
-# html-portfolio
+# portfolio
 A website for my portfolio
