@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <script src="./script.js"></script>
+    <style>
+        address,
+        #copy {
+            display: inline-block;
+        }
+
+        #message {
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
     <h1>P Sai Kumar Reddy</h1>
     <address>saikummar94@gmail.com</address>
+    <div id="copy">
+        <button onclick="copyToClipboard()">copy</button>
+        <span><small id="message"></small></span>
+    </div>
     <h2>Summary</h2>
     <p>C# and .NET Developer with over 1.5 years of experience in designing and developing RESTful APIs for web
         applications and 2.3 years of overall IT experience. Successfully modernized a legacy desktop application to a
