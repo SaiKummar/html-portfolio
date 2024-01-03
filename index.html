@@ -8,12 +8,31 @@
     <script src="./script.js"></script>
     <style>
         address,
-        #copy {
+        .copy-container {
             display: inline-block;
         }
 
         #message {
             color: blue;
+        }
+
+        button {
+            width: 40px;
+            border: none;
+            background-color: lightslategray;
+            border-radius: 0.5em;
+            padding: 0.25em 0.5em;
+            transition: width 0.5s ease-out, background-color 0.25s, transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightskyblue;
+        }
+
+        .button-clicked {
+            width: 60px;
+            transform: rotateX(360deg);
         }
     </style>
 </head>
@@ -21,8 +40,8 @@
 <body>
     <h1>P Sai Kumar Reddy</h1>
     <address>saikummar94@gmail.com</address>
-    <div id="copy">
-        <button onclick="copyToClipboard()">copy</button>
+    <div class="copy-container">
+        <button id="copy" onclick="copyToClipboard()">copy</button>
         <span><small id="message"></small></span>
     </div>
     <h2>Summary</h2>
