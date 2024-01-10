@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="./script.js"></script>
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         address,
         .copy-container {
             display: inline-block;
@@ -33,129 +43,149 @@
             width: 4rem;
             transform: rotateX(360deg);
         }
+
+        .resume {
+            width: 100vb;
+        }
     </style>
 </head>
 
 <body>
-    <h1>P Sai Kumar Reddy</h1>
-    <address>saikummar94@gmail.com</address>
-    <div class="copy-container">
-        <button id="copy" onclick="copyToClipboard()">copy</button>
-        <span><small id="message"></small></span>
+    <div class="resume">
+        <h1>P Sai Kumar Reddy</h1>
+        <address>saikummar94@gmail.com</address>
+        <div class="copy-container">
+            <button id="copy" onclick="copyToClipboard()">copy</button>
+            <span><small id="message"></small></span>
+        </div>
+        <h2>Summary</h2>
+        <p>C# and ASP.NET Core Developer with 2.3 years of overall IT experience and over 1.5 years of experience in
+            designing and developing RESTful APIs for web applications. Successfully modernized a legacy desktop
+            application
+            to a web application using ASP.NET Core Web API. Mastered full-stack technologies during a 4-month
+            internship,
+            including C#, ASP.NET, PostgreSQL, HTML, CSS and Javascript.</p>
+        <p><b>Work Experience</b> - 2.3 years of Backend Development experience in Medical and Retail domains in
+            Comtronus
+            LLP and Cognizant Technology Solutions respectively.</p>
+        <hr />
+        <h3>Associate Software Developer</h3>
+        <p>Comtronus LLP, Visakhapatnam, Andhra Pradesh (June 2022 – Nov 2023)</p>
+        <p><b>Project:</b> Modernization of Labgen - Laboratory Information System (LIS) by converting it from
+            desktop
+            application
+            into a web application using ASP.NET Core Web API and ReactJS</p>
+        <ul>
+            <li>Contributed significantly to understanding intricate business logic and the conversion of legacy C
+                code
+                to
+                efficient RESTful APIs using C# and ASP.NET Core Web API.</li>
+            <li>Followed best practices while naming API endpoints. Additionally, implemented Versioning for the
+                endpoints
+                to
+                future-proof the system against potential changes.</li>
+            <li>Creating optimized SQL queries and stored procedures for
+                PostgreSQL
+                database, resulting in improved database performance.</li>
+            <li>Implemented Dependency Injection to enhance code modularity and facilitate better Unit Testing.</li>
+            <li>Integrated Authentication and Authorization using JWT tokens and ASP.NET Identity, ensuring secure
+                access to
+                the
+                resources.</li>
+            <li>Played a crucial role in manually converting X12 Electronic Data Interchange (EDI) format to JSON,
+                showcasing
+                adaptability to diverse data formats and a strong Research-oriented approach.</li>
+            <li>Leveraged AI tools such as ChatGPT and AWS CodeWhisperer to accelerate documentation processes and
+                generate
+                boilerplate code, significantly saving development time.</li>
+            <li>Consistently recognized by the testing team for maintaining a low rate of bugs, demonstrating a
+                commitment
+                to
+                delivering high-quality and reliable software products.</li>
+            <li>Met Scrum deadlines consistently, ensuring timely delivery of project milestones.</li>
+        </ul>
+        <h4>Internship:</h4>
+        <ul>
+            <li>Completed a 4-month internship, gaining proficiency in full stack web development including ASP.NET
+                Web
+                API,
+                REST
+                API, ReactJS, HTML, CSS and JavaScript.</li>
+            <li>Applied my prior programming knowledge to support fellow interns in grasping concepts, contributing
+                to a
+                collaborative learning environment.</li>
+            <li>Quickly acquired knowledge transfer on the project and promptly started contributing during the
+                internship.
+            </li>
+        </ul>
+        <h3>Programmer Analyst Trainee</h3>
+        <p>Cognizant Technology Solutions India Private Ltd, Coimbatore, Tamil Nadu (March 2016 – Jan 2017)</p>
+        <p><b>Project:</b> Backend Database Support for Cummins.</p>
+        <ul>
+            <li>Established effective communication channels with clients, prioritizing and resolving issues
+                efficiently
+                to
+                enhance client satisfaction.</li>
+            <li>Achieved consistent and successful completion of daily scheduled jobs on AppWorx Scheduler through
+                meticulous
+                monitoring and proactive preparation for any potential escalations or challenges.</li>
+        </ul>
+        <h4>Training:</h4>
+        <ul>
+            <li>Successfully completed training program in Data Warehousing, which included hands-on experience with
+                Informatica
+                ETL and PL/SQL.</li>
+            <li>Gained valuable soft skills such as communication, teamwork, and problem-solving.</li>
+        </ul>
+        <h2>Skills</h2>
+        <hr />
+        <ul>
+            <li>C#, C, Python</li>
+            <li>ASP.NET Web API, ASP.NET MVC</li>
+            <li>REST API</li>
+            <li>SQL, Transact-SQL, SQL Server, PostgreSQL</li>
+            <li>Swagger, Postman</li>
+            <li><b>Frontend: </b>HTML, CSS, Javascript</li>
+            <li>Regular Expressions (Regex)</li>
+            <li>Git, GitHub</li>
+            <li>Visual Studio, VS Code</li>
+            <li>Independent Problem Solver: Can quickly troubleshoot and solve any problem using Google search,
+                Stack
+                Overflow and
+                AI tools.</li>
+            <li>Code Readability: Keen eye for Class, Function and variable names, emphasizing a commitment to code
+                readability
+                and maintainability.</li>
+            <li>Data Structures: Proficient in choosing and applying suitable data structures to effectively address
+                and
+                solve
+                complex problems.</li>
+        </ul>
+        <h2>Education</h2>
+        <hr />
+        <ul>
+            <li>B.Tech. in Information Technology, Karunya University, Coimbatore, Tamil Nadu
+                <ul>
+                    <li>Graduated First Class with Distinction, 8.21 CGPA.</li>
+                </ul>
+            </li>
+            <li>12th CBSE, Sree Vidyanikethan International School, Tirupati, AP</li>
+            <li>10th CBSE, BV Reddy Senior Secondary School, Chittoor, AP</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <hr />
+        <ul>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/VQWCSQXY8N2X"
+                    target="_blank">Machine
+                    Learning</a>
+            </li>
+            <li>Cognizant Certified Professional</li>
+        </ul>
+        <footer>
+            <small>Copyright © 2023 Sai Kumar. All Rights Reserved.</small>
+        </footer>
     </div>
-    <h2>Summary</h2>
-    <p>C# and .NET Developer with over 1.5 years of experience in designing and developing RESTful APIs for web
-        applications and 2.3 years of overall IT experience. Successfully modernized a legacy desktop application to a
-        web
-        application using ASP.NET Core Web API. Mastered full-stack technologies during a 4-month internship, including
-        C#,
-        ASP.NET, PostgreSQL and ReactJS.</p>
-    <p><b>Work Experience</b> - 2.3 years of Backend Development experience in Medical and Retail domains in Comtronus
-        LLP and
-        Cognizant Technology Solutions respectively.</p>
-    <hr />
-    <h3>Associate Software Developer</h3>
-    <p>Comtronus LLP, Visakhapatnam, Andhra Pradesh (June 2022 – Nov 2023)</p>
-    <p><b>Project:</b> Modernization of Labgen - Laboratory Information System (LIS) by converting it from desktop
-        application
-        into a web application using ASP.NET Core Web API and ReactJS</p>
-    <ul>
-        <li>Contributed significantly to understanding intricate business logic and the conversion of legacy C code to
-            efficient RESTful APIs using C# and ASP.NET Core Web API.</li>
-        <li>Followed best practices while naming API endpoints. Additionally, implemented Versioning for the endpoints
-            to
-            future-proof the system against potential changes.</li>
-        <li>Implemented Dapper ORM as a data access layer, creating optimized SQL queries and stored procedures for
-            PostgreSQL
-            database, resulting in improved database performance.</li>
-        <li>Implemented Dependency Injection to enhance code modularity and facilitate better Unit Testing.</li>
-        <li>Integrated Authentication and Authorization using JWT tokens and ASP.NET Identity, ensuring secure access to
-            the
-            resources.</li>
-        <li>Played a crucial role in manually converting X12 Electronic Data Interchange (EDI) format to JSON,
-            showcasing
-            adaptability to diverse data formats and a strong Research-oriented approach.</li>
-        <li>Leveraged AI tools such as ChatGPT and AWS CodeWhisperer to accelerate documentation processes and generate
-            boilerplate code, significantly saving development time.</li>
-        <li>Consistently recognized by the testing team for maintaining a low rate of bugs, demonstrating a commitment
-            to
-            delivering high-quality and reliable software products.</li>
-        <li>Met Scrum deadlines consistently, ensuring timely delivery of project milestones.</li>
-    </ul>
-    <h4>Internship:</h4>
-    <ul>
-        <li>Completed a 4-month internship, gaining proficiency in full stack web development including ASP.NET Web API,
-            REST
-            API, ReactJS, HTML, CSS and JavaScript.</li>
-        <li>Applied my prior programming knowledge to support fellow interns in grasping concepts, contributing to a
-            collaborative learning environment.</li>
-        <li>Quickly acquired knowledge transfer on the project and promptly started contributing during the internship.
-        </li>
-    </ul>
-    <h3>Programmer Analyst Trainee</h3>
-    <p>Cognizant Technology Solutions India Private Ltd, Coimbatore, Tamil Nadu (March 2016 – Jan 2017)</p>
-    <p><b>Project:</b> Backend Database Support for Cummins.</p>
-    <ul>
-        <li>Established effective communication channels with clients, prioritizing and resolving issues efficiently to
-            enhance client satisfaction.</li>
-        <li>Achieved consistent and successful completion of daily scheduled jobs on AppWorx Scheduler through
-            meticulous
-            monitoring and proactive preparation for any potential escalations or challenges.</li>
-    </ul>
-    <h4>Training:</h4>
-    <ul>
-        <li>Successfully completed training program in Data Warehousing, which included hands-on experience with
-            Informatica
-            ETL and PL/SQL.</li>
-        <li>Gained valuable soft skills such as communication, teamwork, and problem-solving.</li>
-    </ul>
-    <h2>Skills</h2>
-    <hr />
-    <ul>
-        <li>C#, C, JavaScript, Python</li>
-        <li>ASP.NET Web API, ASP.NET MVC</li>
-        <li>Dapper</li>
-        <li>REST API</li>
-        <li>SQL, Transact-SQL, SQL Server, PostgreSQL</li>
-        <li>Swagger, Postman</li>
-        <li>HTML, CSS</li>
-        <li>Regular Expressions (Regex)</li>
-        <li>Git, GitHub</li>
-        <li>Visual Studio, VS Code</li>
-        <li>Independent Problem Solver: Can quickly troubleshoot and solve any problem using Google search, Stack
-            Overflow and
-            AI tools.</li>
-        <li>Code Readability: Keen eye for Class, Function and variable names, emphasizing a commitment to code
-            readability
-            and maintainability.</li>
-        <li>Data Structures: Proficient in choosing and applying suitable data structures to effectively address and
-            solve
-            complex problems.</li>
-    </ul>
-    <h2>Education</h2>
-    <hr />
-    <ul>
-        <li>B.Tech. in Information Technology, Karunya University, Coimbatore, Tamil Nadu
-            <ul>
-                <li>Graduated First Class with Distinction, 8.21 CGPA.</li>
-            </ul>
-        </li>
-        <li>12th CBSE, Sree Vidyanikethan International School, Tirupati, AP</li>
-        <li>10th CBSE, BV Reddy Senior Secondary School, Chittoor, AP</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <hr />
-    <ul>
-        <li><a href="https://www.coursera.org/account/accomplishments/certificate/VQWCSQXY8N2X" target="_blank">Machine
-                Learning</a>
-        </li>
-        <li>Cognizant Certified Professional</li>
-    </ul>
-    <footer>
-        <small>Copyright © 2023 Sai Kumar. All Rights Reserved.</small>
-    </footer>
-
 </body>
 
 </html>
