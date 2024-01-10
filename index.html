@@ -30,10 +30,11 @@
             padding: 0.25em 0.5em;
             transition: width 0.5s ease-out, background-color 0.25s, transform 0.5s ease-in-out;
             cursor: pointer;
+            background-color: #e3c1a6;
         }
 
         button:hover {
-            background-color: lightgrey;
+            background-color: #c66f6f;
         }
 
         .button-clicked {
@@ -48,6 +49,7 @@
         }
 
         .resume {
+            background-color: blanchedalmond;
             width: 100vb;
             border: 0.1rem solid black;
             border-radius: 2rem;
@@ -58,6 +60,10 @@
             display: flex;
             justify-content: center;
         }
+
+        .work-experience {
+            font-size: large;
+        }
     </style>
 </head>
 
@@ -65,7 +71,7 @@
     <div class="resume-container">
         <div class="resume">
             <h1>P Sai Kumar Reddy</h1>
-            <address>saikummar94@gmail.com</address>
+            <span>saikummar94@gmail.com</span>
             <div class="copy-container">
                 <button id="copy" onclick="copyToClipboard()">copy</button>
                 <span><small id="message"></small></span>
@@ -77,7 +83,9 @@
                 to a web application using ASP.NET Core Web API. Mastered full-stack technologies during a 4-month
                 internship,
                 including C#, ASP.NET, PostgreSQL, HTML, CSS and Javascript.</p>
-            <p><b>Work Experience</b> - 2.3 years of Backend Development experience in Medical and Retail domains in
+            <p><b class="work-experience">Work Experience</b> - 2.3 years of Backend Development experience in Medical
+                and Retail
+                domains in
                 Comtronus
                 LLP and Cognizant Technology Solutions respectively.</p>
             <hr />
